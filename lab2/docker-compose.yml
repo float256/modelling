@@ -1,0 +1,9 @@
+services:
+  2048-game:
+    image: 2048-game
+    container_name: 2048-game
+    ports:
+      - "${GAME_PORT}:8080"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
